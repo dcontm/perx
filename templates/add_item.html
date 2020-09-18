@@ -1,0 +1,26 @@
+{% set title = "Add-item" %}
+<h3> Добавить новую задачу </h3>
+
+<form action="/add_item" method="post" accept-charset="utf-8"
+      enctype="application/x-www-form-urlencoded">
+    <ul>
+    	<li>
+    		<label for="quantity">Колличество элементов(int)</label>
+    		<input id="quantity" name="quantity" type="number" min="0" value="" autofocus required />
+    	</li>
+    	<li>
+    		<label for="delta">Дельта(float)</label>
+    		<input id="delta" name="delta" type="number" min="0.1" step="0.01" value="" required/>
+    	</li>
+    	<li>
+    		<label for="start_value">Стартовое значение</label>
+    		<input id="start_value" name="start_value" type="number" min="0" step="0.01" value="" required/>
+    	</li>
+    	<li>
+    		<label for="interval">Интервал</label>
+			<input id="interval" name="interval" type="number" min="0.1" step="0.01" value="" required/>
+		</li>
+	</ul>
+
+    <input type="submit" value="Добавить"/>
+</form>
