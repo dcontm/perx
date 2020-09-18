@@ -14,7 +14,7 @@ def worker():
     global lock
     lock = False
     item = q[0]
-    item.status = 'worked!'
+    item.status = 'обрабатывается'
     item.start_date = datetime.datetime.now().strftime("%H:%M %d/%m")
     for _ in range(item.quantity):
         time.sleep(item.interval)

@@ -3,7 +3,7 @@
 {% if queue %}
     <ul>
     {% for item in queue %}
-        <li>Номер в очереди {{queue.index(item)}} | Статус {{item.status}} | N {{item.quantity}} | D {{item.delta}} | N1 {{item.start_value}} | Текущее значение {{item.current_value}} | Интервал {{item.interval}} | Время старта {{item.start_date}} </li>
+        <li>Номер в очереди: {{queue.index(item)}} | Статус: <span style="color:green">{{item.status}}</span> | N: {{item.quantity}} | D: {{item.delta}} | N1: {{item.start_value}} | Текущее значение: {{item.current_value}} | Интервал: {{item.interval}} | Время старта: {{item.start_date}} </li>
     {% endfor %}
     </ul>
 {% else %}

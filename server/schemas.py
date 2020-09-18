@@ -6,8 +6,8 @@ class Item:
                  current_value,
                  interval,
                  number=None,
-                 status='in the queue',
-                 start_date='В очереди'):
+                 status='в очереди',
+                 start_date='в очереди'):
         self.quantity = quantity
         self.delta = delta
         self.start_value = start_value
@@ -16,26 +16,3 @@ class Item:
         self.number = number
         self.status = status
         self.start_date = start_date
-
-
-''''
-class Item(BaseModel):
-    position: int = None
-    quantity: int
-    delta: float
-    start_value: float
-    current_value: float
-    interval: float
-    status: str = 'in the queue'
-    start_date: str = '01.01'
-
-    class Config:
-        orm_mode = True
-
-    @validator('quantity', 'delta', 'start_value', 'interval')
-    def validation_quantity(cls, v):
-        for i in v:
-            if i < 1:
-                raise ValueError('Все значения должны быть больше 0')
-        return v
-'''
