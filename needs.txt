@@ -1,5 +1,6 @@
 aiohttp==3.6.2
 aiohttp-jinja2==1.2.0
+aiojobs==0.2.2
 async-timeout==3.0.1
 attrs==20.2.0
 chardet==3.0.4

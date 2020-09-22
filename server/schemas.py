@@ -5,7 +5,6 @@ class Item:
                  start_value,
                  current_value,
                  interval,
-                 number=None,
                  status='в очереди',
                  start_date='в очереди'):
         self.quantity = quantity
@@ -13,6 +12,5 @@ class Item:
         self.start_value = start_value
         self.current_value = current_value
         self.interval = interval
-        self.number = number
         self.status = status
         self.start_date = start_date
